@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2018",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "composite": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "alwaysStrict": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationDir": "./dist",
+  },
+  "exclude": [
+    "./node_modules",
+    "./demo",
+    "./dist",
+    "./src/**/*.tests.ts",
+    "./src/**/*.tests.tsx",
+  ],
+}

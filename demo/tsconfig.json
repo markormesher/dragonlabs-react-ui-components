@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2018",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "allowSyntheticDefaultImports": true,
+  },
+  "exclude": [
+    "./node_modules",
+    "./dist",
+  ],
+  "references": [
+    { "path": "../" },
+  ]
+}

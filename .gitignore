@@ -1,0 +1,26 @@
+# Generated code
+dist/
+node_modules/
+demo/dist/
+demo/node_modules/
+
+# Test outputs
+coverage/
+.nyc_output/
+
+# Logs
+yarn-*.log*
+logs/**
+!logs/.gitkeep
+
+# IntelliJ
+*.iml
+.idea/
+
+# Linux
+*~
+.Trash-*
+
+# OSX
+.DS_Store
+._*

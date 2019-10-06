@@ -1,0 +1,9 @@
+{
+	"files": [
+		{
+			"path": "./build/*",
+			"maxSize": "50kb",
+			"compression": "gzip"
+		}
+	]
+}
