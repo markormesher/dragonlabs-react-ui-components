@@ -2,4 +2,4 @@
 **/*
 
 # ...apart from the package
-!dist/
+!dist/**/*

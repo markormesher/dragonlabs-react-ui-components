@@ -19,5 +19,6 @@
     "./dist",
     "./src/**/*.tests.ts",
     "./src/**/*.tests.tsx",
+    "./src/test-utils",
   ],
 }
