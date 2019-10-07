@@ -46,7 +46,6 @@ const typedCssLoader = {
     camelCase: "only",
     modules: true,
     namedExport: true,
-    localIdentName: "_demo_[name]_[local]_[hash:base64:5]", // prefix "_demo" so we can make sure classes come from the right place
   },
 };
 
