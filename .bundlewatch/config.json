@@ -1,7 +1,7 @@
 {
 	"files": [
 		{
-			"path": "./build/*",
+			"path": "./dist/*",
 			"maxSize": "50kb",
 			"compression": "gzip"
 		}
