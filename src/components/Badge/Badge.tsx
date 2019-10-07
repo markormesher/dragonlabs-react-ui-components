@@ -16,11 +16,7 @@ interface IBadgeProps {
 class Badge extends PureComponent<IBadgeProps> {
   public render(): ReactNode {
     const { intent, spacing } = this.props;
-    const classes = combine(
-      bs.badge,
-      ...getBootstrapIntentClasses("badge", intent),
-      ...getBsSpacingClasses(spacing),
-    );
+    const classes = combine(bs.badge, ...getBootstrapIntentClasses("badge", intent), ...getBsSpacingClasses(spacing));
     return <span className={classes}>{this.props.children}</span>;
   }
 }

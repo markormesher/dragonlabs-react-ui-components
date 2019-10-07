@@ -18,27 +18,11 @@ describe(__filename, () => {
     mountWrapper.text().should.equal("hello");
   });
 
-  it("should apply the given class", () => {
-    mountWrapper = mount(<Badge className={bs.badgeInfo}>hello</Badge>);
+  it("should apply the given intent", () => {
+    mountWrapper = mount(<Badge intent={"success"}>hello</Badge>);
     mountWrapper
       .find("span")
-      .hasClass(bs.badgeInfo)
-      .should.equal(true);
-  });
-
-  it("should apply a right margin if requested", () => {
-    mountWrapper = mount(<Badge marginRight={true}>hello</Badge>);
-    mountWrapper
-      .find("span")
-      .hasClass(bs.mr1)
-      .should.equal(true);
-  });
-
-  it("should apply a left margin if requested", () => {
-    mountWrapper = mount(<Badge marginLeft={true}>hello</Badge>);
-    mountWrapper
-      .find("span")
-      .hasClass(bs.ml1)
+      .hasClass(bs.badgeSuccess)
       .should.equal(true);
   });
 });
