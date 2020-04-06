@@ -25,4 +25,12 @@ describe(__filename, () => {
       .hasClass(bs.badgeSuccess)
       .should.equal(true);
   });
+
+  it("should apply the given spacing", () => {
+    mountWrapper = mount(<Badge spacing={{ margin: { left: 1 } }}>hello</Badge>);
+    mountWrapper
+      .find("span")
+      .hasClass(bs.ml1)
+      .should.equal(true);
+  });
 });
