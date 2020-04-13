@@ -2,7 +2,7 @@
 	"files": [
 		{
 			"path": "./dist/*",
-			"maxSize": "50kb",
+			"maxSize": "500kb",
 			"compression": "gzip"
 		}
 	]
