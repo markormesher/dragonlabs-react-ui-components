@@ -9,7 +9,6 @@ chai.should();
 
 const testGlobals = {
   mountWrapper: null as Enzyme.ReactWrapper,
-  init: (): void => {},
 };
 
 afterEach(() => {
