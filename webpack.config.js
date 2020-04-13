@@ -1,5 +1,6 @@
 const { resolve } = require("path");
 const glob = require("glob");
+const WebpackNodeExternals = require("webpack-node-externals");
 const TerserWebpackPlugin = require("terser-webpack-plugin");
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const webpack = require("webpack");
@@ -128,7 +129,7 @@ const config = {
     modules: ["node_modules", "src"],
   },
   externals: IS_TEST
-    ? {}
+    ? [WebpackNodeExternals()]
     : {
         // don't bundle react or react-dom
         react: {
